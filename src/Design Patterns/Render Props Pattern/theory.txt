@@ -1,0 +1,15 @@
+What is render props
+Render Props Patterns is when A prop in component which is a function and that returns JSX
+
+When to use Render Props??
+
+
+1. when we want to make the component customizable
+2. Provide ability to theme the compponent according to their design system
+
+
+why render prop patterns 
+
+it provide the flexibility to render the jsx or component as per the requirement without touching the actual component 
+
+it provide more flexibility to work with the component data to render the elements
