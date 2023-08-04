@@ -1,0 +1,4 @@
+// hooks were introduced in react 16.8 version
+
+custom hooks are useful to extract component logic into resusable functions
+

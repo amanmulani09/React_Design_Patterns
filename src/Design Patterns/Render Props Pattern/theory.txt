@@ -3,7 +3,6 @@ Render Props Patterns is when A prop in component which is a function and that r
 
 When to use Render Props??
 
-
 1. when we want to make the component customizable
 2. Provide ability to theme the compponent according to their design system
 
