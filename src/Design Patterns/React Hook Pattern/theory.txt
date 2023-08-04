@@ -2,3 +2,10 @@
 
 custom hooks are useful to extract component logic into resusable functions
 
+//Rules of Hooks 
+
+1. Only call hooks at the Top Level, do not call in loops or conditions or switch satatement extract
+2. Only Call Hooks from React functions
+(not class based components)
+
+custom hooks everytime create isolated environment 
