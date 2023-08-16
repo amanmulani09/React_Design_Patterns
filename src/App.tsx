@@ -1,5 +1,5 @@
 import './App.css'
-import Example from './Design Patterns/Render Props Pattern/Example'
+import Example from './Design Patterns/React Compound Pattern/Example'
 
 function App() {
 
