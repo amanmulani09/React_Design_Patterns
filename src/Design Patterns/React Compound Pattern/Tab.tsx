@@ -1,39 +1,41 @@
 import { createContext,useContext } from "react"
-const TabContext = createContext(null);
+import './Tab.css'
+const TabContext = createContext({});
 export default function Tab({currentTab,onChange,children}:any){
     return(
-        <div>
-            <TabContext.Provider value={{currentTab,onChange,children}}>
-                {children}
-                </TabContext.Provider>
-        </div>
+      <div className="tab">
+        <TabContext.Provider value={{currentTab,onChange,children}}>
+            {children}
+        </TabContext.Provider>
+      </div>
     )
 }
 
 Tab.HeadsContainer = ({children}:any)=>{
     return(
-        <div>
+        <div className="headsContainer">
             {children}
         </div>
     )
 }
 
-Tab.Item = ({label,indexchildren}:any)=>{
+Tab.Item = ({label,index,children}:any)=>{
+    const {currentTab,onChange}:any = useContext(TabContext)
+    console.log(currentTab,onChange)
     return(
-        <div>
+        <div className={`item ${currentTab === index ? 'active': ''}`} onClick={()=> onChange(index)}>
             {label}
         </div>
     )
 }
 
 Tab.ContentConatiner = ({children})=>{
-return <div>{children}</div>
+return <div className="ContentConatiner">{children}</div>
 }
 
 Tab.ContentItem = ({index,children})=>{
-    return(
-        <div>
-        {children}
-        </div>
-    )
+    const {currentTab,onChange}:any = useContext(TabContext)
+    console.log(currentTab,index)
+    return currentTab === index && <div> {children}</div>
+    
 }

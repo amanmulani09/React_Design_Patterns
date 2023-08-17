@@ -11,11 +11,11 @@ const Example = () =>{
         <>
         <Tab currentTab={currentTabIndex} onChange={handleChange}>
           <Tab.HeadsContainer>
-            <Tab.Item label="tab1" index={0}/>
-            <Tab.Item label="tab2" index={1}/>
-            <Tab.Item label="tab3" index={2}/>
+            <Tab.Item label="tab1" index={1}/>
+            <Tab.Item label="tab2" index={2}/>
+            <Tab.Item label="tab3" index={3}/>
           </Tab.HeadsContainer>
-        </Tab>
+
         <Tab.ContentConatiner>
 
             <Tab.ContentItem index={1}>
@@ -29,6 +29,8 @@ const Example = () =>{
             </Tab.ContentItem>
 
         </Tab.ContentConatiner>
+
+        </Tab>
         </>
     )
 }

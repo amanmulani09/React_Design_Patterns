@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-     <h1>Hello Design's</h1>
+     {/* <h1>Hello Design's</h1> */}
      <Example />
     </>
   )
